@@ -12,3 +12,4 @@ mysql -u"$USER" -p"$PASSWORD" "$DB_RSERVE" < full-backup-db.sql
 
 mysqldump -u"$USER" -p"$PASSWORD" "$DATABASE" --no-create-info --result-file=data-backup-db.sql
 mysql -u"$USER" -p"$PASSWORD" "$DB_DEVELOPMENT" < data-backup-db.sql
+
